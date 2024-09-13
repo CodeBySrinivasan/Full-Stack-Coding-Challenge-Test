@@ -1,0 +1,135 @@
+/* Background gradient with vibrant blue and pink */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #bca514, #ed2626);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Arrange header, content, and footer vertically */
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: left;
+    justify-content: flex-start; /* Center content horizontally */
+}
+
+header h2 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* White color for contrast against semi-transparent background */
+}
+
+/* Main container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparent for better contrast */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow for better separation */
+    width: 400px;
+    text-align: center;
+    margin: 20px auto; /* Add margin for space at the top and center horizontally */
+    flex: 0; /* Allow the container to grow and center vertically */
+}
+/* Heading styling */
+h1, h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Gradient text styling */
+.gradient-text {
+    font-size: 2.5rem; /* Adjust as needed */
+    font-weight: bold; /* Optional: to make the text bold */
+    background: linear-gradient(to right, #ff6f61, #ffcc00); /* Gradient colors */
+    -webkit-background-clip: text; /* For WebKit-based browsers */
+    -webkit-text-fill-color: transparent; /* For WebKit-based browsers */
+    background-clip: text; /* For other browsers */
+    text-fill-color: transparent; /* For other browsers */
+    display: inline; /* Ensure it behaves as inline element */
+}
+
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width of the container */
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px; /* Space between label and input */
+    color: #333; /* Dark color for form labels for better readability */
+}
+
+input[type="file"] {
+    margin-bottom: 20px; /* Space below the file input */
+    width: 100%; /* Full width of the form for alignment */
+    padding: 10px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Border for better visibility */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff7e00, #ff9e3f); /* Gradient colors for button */
+    color: #333; /* Dark text color for readability */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s; /* Smooth transition effect */
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4b4b, #ffd700); /* Red to Gold */
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333; /* Dark color for results text for better readability */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent footer */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-icon i {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.footer-icon:hover i {
+    color: #0056b3;
+}
+
+/* Responsive styling for tablets and larger phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

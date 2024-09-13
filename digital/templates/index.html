@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <!-- Link to font-awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header with company name -->
+    <header>
+        <h2 class="gradient-text">DigitalXC</h2>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1 class="gradient-text">Secret Santa Project</h1>
+        <form id="uploadForm">
+            <label for="employeesFile">Upload Employee CSV File:</label>
+            <input type="file" id="employeesFile" name="employeesFile" required>
+            <br>
+            <label for="previousYearFile">Upload Previous Year CSV File (optional):</label>
+            <input type="file" id="previousYearFile" name="previousYearFile">
+            <br>
+            <button type="submit">Submit</button>
+            <h2>upload the file and see the 🎁 Person Name</h2>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <!-- Footer with contact details using icons -->
+    <footer>
+        <p>Created by Srinivasan M</p>
+        <a href="mailto:srinimuthu80@gmail.com" target="_blank" class="footer-icon">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/CodeBySrinivasan" target="_blank" class="footer-icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/srinivasan2002/" target="_blank" class="footer-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </footer>
+
+    <script src="static/app.js"></script>
+</body>
+</html>
